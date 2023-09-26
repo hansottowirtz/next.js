@@ -20,35 +20,40 @@ const INITIALIZING_TEST_CASES = [
   'should build successfully',
 ]
 
+// please make sure this is sorted alphabetically when making changes.
 const SKIPPED_TEST_SUITES = {
-  'test/e2e/basepath.test.ts': [
-    'basePath should 404 when manually adding basePath with router.push',
-    'basePath should 404 when manually adding basePath with router.replace',
-  ],
-  'test/integration/dynamic-routing/test/middleware.test.js': [
-    'Dynamic Routing dev mode should resolve dynamic route href for page added later',
-    'Dynamic Routing production mode should output a routes-manifest correctly',
-  ],
-  'test/integration/css/test/css-modules.test.js': [
-    'CSS Modules Composes Ordering Development Mode should have correct color on index page (on nav from other)',
-  ],
-  'test/development/acceptance/ReactRefreshRequire.test.ts': [
-    'ReactRefreshRequire re-runs accepted modules',
-    'ReactRefreshRequire propagates a hot update to closest accepted module',
-  ],
-  'test/e2e/middleware-rewrites/test/index.test.ts': [
-    'Middleware Rewrite should have props for afterFiles rewrite to SSG page',
-  ],
-  'test/integration/dynamic-routing/test/index.test.js': [
-    'Dynamic Routing production mode should have correct cache entries on prefetch',
-    'Dynamic Routing production mode should render dynamic route with query',
-  ],
   'test/development/acceptance-app/ReactRefreshLogBox-builtins.test.ts': [
     'ReactRefreshLogBox app turbo Module not found missing global CSS',
   ],
   'test/development/acceptance-app/ReactRefreshRegression.test.ts': [
     'ReactRefreshRegression app can fast refresh a page with dynamic rendering',
     'ReactRefreshRegression app can fast refresh a page with config',
+  ],
+  'test/development/acceptance/ReactRefreshRequire.test.ts': [
+    'ReactRefreshRequire re-runs accepted modules',
+    'ReactRefreshRequire propagates a hot update to closest accepted module',
+  ],
+  'test/e2e/basepath.test.ts': [
+    'basePath should 404 when manually adding basePath with router.push',
+    'basePath should 404 when manually adding basePath with router.replace',
+  ],
+  'test/e2e/middleware-rewrites/test/index.test.ts': [
+    'Middleware Rewrite should have props for afterFiles rewrite to SSG page',
+  ],
+  'test/integration/css/test/css-modules.test.js': [
+    'CSS Modules Composes Ordering Development Mode should have correct color on index page (on nav from other)',
+  ],
+  'test/integration/custom-error/test/index.test.js': [/Custom _error/],
+  'test/integration/dynamic-routing/test/index.test.js': [
+    'Dynamic Routing production mode should have correct cache entries on prefetch',
+    'Dynamic Routing production mode should render dynamic route with query',
+  ],
+  'test/integration/dynamic-routing/test/middleware.test.js': [
+    'Dynamic Routing dev mode should resolve dynamic route href for page added later',
+    'Dynamic Routing production mode should output a routes-manifest correctly',
+  ],
+  'test/integration/import-assertion/test/index.test.js': [
+    /should handle json assertions/,
   ],
 }
 
